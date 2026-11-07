@@ -366,11 +366,6 @@ app.layout = html.Div(
                                                    marginBottom="4px")),
                     html.Div("w = opening between the fingers (along y₃)",
                              style=dict(fontSize="11px", color=MUTED)),
-                    dcc.Dropdown(
-                        id="grip_axis", clearable=False, value="x",
-                        options=[{"label": "Points along link 3 (x₃)", "value": "x"},
-                                 {"label": "Points along z₃ (DH approach)", "value": "z"}],
-                        style=dict(color="#000", fontSize="13px", margin="8px 0 2px")),
                     param_row(3, GRIP_KEY),
                     html.Div("Gripper direction:", style=dict(
                         fontSize="12px", color="#c7d3ed", margin="8px 0 2px")),
@@ -510,7 +505,6 @@ def update(*args):
     types = args[13:16]
     display = args[16] or []
     axis_sel = args[17] or "none"
-    grip_axis = args[18] or "x"
     grip_axis = args[18] or "x"
 
     params_rad, lab_styles = [], []
