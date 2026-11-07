@@ -39,7 +39,7 @@ ALL_SLIDERS = [(j, k) for j in range(3) for k in KEYS] + [(3, GRIP_KEY)]
 
 AXIS_COLORS = ("#ff4d4d", "#3ddc84", "#4da3ff")  # x red, y green, z blue
 REV_COLOR, PRIS_COLOR, GRIPPER_COLOR = "#dce6ff", "#ff9f43", "#2ec4b6"
-MARKER_SIZE = 35  # joint markers: dot = revolute, square = prismatic (was 7)
+MARKER_SIZE = 25  # joint markers: dot = revolute, square = prismatic (was 7)
 
 # Screen-space (pixel) offsets of each label from the point it names. Because
 # they are screen offsets, the labels stay apart while you orbit the view.
